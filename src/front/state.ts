@@ -1,6 +1,6 @@
 import { rtdb } from "./rtdb";
 import map from "lodash/map";
-const API_BASE_URL = "http://localhost:1200";
+const API_BASE_URL = process.env.PORT || "http://localhost:1200";
 
 
 const state = {
