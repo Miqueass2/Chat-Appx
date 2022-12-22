@@ -25,5 +25,8 @@
     "build:back": "tsc",
     "build": "yarn build:front && yarn build:back",
     "start": "node ./src/back/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
   }
 }
