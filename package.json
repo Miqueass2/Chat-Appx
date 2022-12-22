@@ -13,6 +13,7 @@
     "express": "^4.18.2",
     "firebase": "8.7.1",
     "firebase-admin": "^11.2.0",
+    "lodash": "^4.17.21",
     "nanoid": "^3.0.0",
     "nodemon": "^2.0.20",
     "parcel": "^2.0.0-rc.0",
@@ -22,8 +23,8 @@
     "dev:front": "parcel serve ./src/front/index.html",
     "dev:back": "nodemon --watch './src/back/index.ts' --exec 'ts-node ./src/back/dev.ts'",
     "build:front": "parcel build ./src/front/index.html",
-		"build:back": "tsc",
-		"build": "yarn build:front && yarn build:back",
-		"start": "node ./src/back/index.js"
+    "build:back": "tsc",
+    "build": "yarn build:front && yarn build:back",
+    "start": "node ./src/back/index.js"
   }
 }
