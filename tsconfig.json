@@ -6,5 +6,5 @@
       "resolveJsonModule": true,
       "strictNullChecks": false
    },
-   "files": ["./src/back/index.ts"]
+   "files": ["./src/back/index.ts", "./src/back/db.ts"]
 }
