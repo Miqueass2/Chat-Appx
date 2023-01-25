@@ -35,7 +35,8 @@ app.post("/signup", (req, res) => {
                id: newUser.id,
                new: true,
             });
-            /* console.log("newuserId ",newUser.id); */
+            /* devuelve el id en userscollection users 
+            console.log("newuserId ",newUser.id); */
             
          });
       } else {
@@ -136,6 +137,7 @@ app.post("/rooms", (req, res) => {
    
 });
 
+/* ENDPOINT que da acceso a la room */
 app.get("/rooms/:roomId",(req,res)=>{
    const { userId }:any = req.query
    const {roomId} = req.params
@@ -149,26 +151,22 @@ app.get("/rooms/:roomId",(req,res)=>{
                   const data = snap.data()
                   //ACA EN DATA ESTA EL NANO ID QUE LO VI POR LOG
                   //console.log("soy data room/:roomId ",data);
-                  
                   res.json(data)
-                  
                } else {
                   res.status(401).json({
                      message:"Room no existente",
                   })
                }
-            
             });
-            roomsColecction.doc(roomId).get
-            console.log();
-            
-      } else {
+         /*  roomsColecction.doc(roomId).get
+            console.log(); */
+         }
+      /*    else {
             res.status(401).json({
                message: "no existis"
             });
-      }
+      } */
       });
-   
 });
 
 app.post("/rooms/:id", (req, res) => {

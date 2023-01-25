@@ -31,7 +31,7 @@ class ChatPage extends HTMLElement{
          e.preventDefault();
          const target = e.target as any;
          const valueMessage = target.message.value;
-         console.log(valueMessage);
+         /* console.log(valueMessage); */
 
          if (valueMessage !== "") {
             state.setMessage(valueMessage)
@@ -179,8 +179,6 @@ class ChatPage extends HTMLElement{
 
          const individualChats = document.createElement("div");
          if (chatName === currentState.fullName) {
-            const date = new Date();
-            const semana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
             individualChats.innerHTML = `
             <div class="user-1">
                <h3 class="user-name">${chatName}</h3>
@@ -190,8 +188,7 @@ class ChatPage extends HTMLElement{
             divChatEl.appendChild(individualChats);
          }
          if (chatName !== currentState.fullName) {
-            const date = new Date();
-            const semana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            
             individualChats.innerHTML = `
             <div class="user-2">
                <h3 class="user-name-2">${chatName}</h3>
