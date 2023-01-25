@@ -1,5 +1,5 @@
 import { state } from "./state";
-/* COMPONENTS */
+/* COMPONENTSS */
 import { formComponent } from "./components/form";
 /* PAGES */
 import "./pages/home/index";
