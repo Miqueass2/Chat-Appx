@@ -19,7 +19,7 @@
     "uuid": "^9.0.0"
   },
   "scripts": {
-    "dev:front": "parcel serve ./src/front/index.html",
+    "dev:front": "parcel serve ./src/front/index.html --port 8084",
     "dev:back": "nodemon --watch './src/back/index.ts' --exec 'ts-node ./src/back/dev.ts'",
     "build:front": "parcel build ./src/front/index.html",
     "build:back": "tsc",

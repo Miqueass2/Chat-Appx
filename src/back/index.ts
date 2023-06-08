@@ -3,7 +3,7 @@ import * as express from "express";
 import { nanoid } from "nanoid";
 import * as cors from "cors";
 import * as bodyParser from "body-parser";
-const port = process.env.PORT || 1200;
+const port = process.env.PORT || 8080;
 const app = express();
 
 
